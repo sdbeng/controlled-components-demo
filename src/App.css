@@ -30,3 +30,8 @@
     transform: rotate(360deg);
   }
 }
+
+label{
+  display:block;
+  margin:.2em;
+}
