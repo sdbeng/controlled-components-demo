@@ -21,13 +21,13 @@ export class EventListener extends Component {
         this.handleKeyPress = this.handleKeyPress.bind(this)
     }
     componentDidMount() {
-        document.addEventListener('event', this.handleKeyPress)
+        document.addEventListener('keydown', this.handleKeyPress)
         console.log('LOG cdm');
 
     }
     componentWillUnmount() {
         console.log('LOG cwillunmount');
-        document.removeEventListener('event', this.handleKeyPress)
+        document.removeEventListener('keydown', this.handleKeyPress)
     }
     // handleEnter
     handleEnter = () => {
