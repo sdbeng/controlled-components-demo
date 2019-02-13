@@ -1,3 +1,8 @@
+/* React: Manage Updates with Lifecycle Methods
+Another lifecycle method is componentWillReceiveProps() which is called whenever a component is receiving new props. This method receives the new props as an argument, which is usually written as nextProps. You can use this argument and compare with this.props and perform actions before the component updates. For example, you may call setState() locally before the update is processed.
+
+*/
+
 import React from 'react'
 
 class Dialog extends React.Component {
