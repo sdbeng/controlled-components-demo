@@ -54,7 +54,7 @@ class Dialog extends React.Component {
     }
   };
 
-  /* This is what I see in the console!!
+  /* This is what I see in the console!! as i trigger the button
 this.props {message: "First Message"}
 frame.js:90 nextProps {message: "Second Message"}
 frame.js:90 Component is about to update...
