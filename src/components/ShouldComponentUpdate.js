@@ -13,8 +13,8 @@ class OnlyEvens extends React.Component {
     shouldComponentUpdate(nextProps, nextState) {
       console.log('Should I update?');
        // change code below this line
-       if(this.props.value % 2 === 0){
-         console.log('OnlyEvens LOG this.props.value', this.props.value)
+       if(nextProps.value % 2 === 0){
+         console.log('OnlyEvens LOG this.props.value', nextProps.value)
          return true;
        } 
       return false
