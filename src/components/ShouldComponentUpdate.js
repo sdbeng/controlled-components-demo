@@ -53,3 +53,17 @@ class OnlyEvens extends React.Component {
       );
     }
   };
+/* Yeah!
+Receiving new props...
+frame.js:90 Should I update?
+frame.js:90 Receiving new props...
+frame.js:90 Should I update?
+frame.js:90 OnlyEvens LOG this.props.value 2
+frame.js:90 Component re-rendered.
+frame.js:90 Receiving new props...
+frame.js:90 Should I update?
+frame.js:90 Receiving new props...
+frame.js:90 Should I update?
+frame.js:90 OnlyEvens LOG this.props.value 4
+frame.js:90 Component re-rendered.
+*/
