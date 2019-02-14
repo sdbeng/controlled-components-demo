@@ -6,13 +6,38 @@ Another application of using JavaScript to control your rendered view is to tie 
 import React, { Component } from 'react'
 
 export class Conditionals1 extends Component {
-  render() {
-    return (
-      <div>
-        
-      </div>
-    )
-  }
+    constructor(props) {
+        super(props);
+        this.state = {
+            display: true
+        }
+        this.toggleDisplay = this.toggleDisplay.bind(this);
+    }
+    toggleDisplay() {
+        this.setState({
+            display: !this.state.display
+        });
+    }
+    render() {
+        if (this.state.display) {
+            return (
+                <div>
+                    <button
+                        onClick={this.toggleDisplay}>Toggle Display
+               </button>
+                    <h1>Displayed!</h1>
+                </div>
+            )
+        } else {
+            return (
+                <div>
+                    <button
+                        onClick={this.toggleDisplay}>Toggle Display
+               </button>
+                </div>
+            )
+        }
+    }
 }
 
 export default Conditionals1
