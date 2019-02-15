@@ -20,7 +20,7 @@ export class Ternary extends Component {
           userAge: ''
         })
       }
-      
+
       submit=()=> {
         this.setState({
           userAge: this.state.input
@@ -41,8 +41,8 @@ export class Ternary extends Component {
         type="number"
         value={this.state.input}
         onChange={this.handleChange} /><br />
-      { buttonOne }
-      {this.state.input < 18 ? buttonThree : buttonTwo}
+      
+      {buttonOne}
       <h1>userAge: {this.state.userAge}</h1>
       </div>
     )
@@ -53,5 +53,10 @@ const inputStyle = {
     width: 235,
     margin: 5
   }
+
+/*   from stackOverflow example
+{ ( (!this.state.isHidden) && (var1 === var2)) ? <Component-to-be-displayed /> : <Somthing /> }
+
+*/
 
 export default Ternary
