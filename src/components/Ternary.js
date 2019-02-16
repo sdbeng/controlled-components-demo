@@ -42,7 +42,7 @@ export class Ternary extends Component {
         value={this.state.input}
         onChange={this.handleChange} /><br />
       
-        { this.state.input >= 18 ? buttonTwo : (this.state.userAge=='')? buttonOne:buttonThree}
+        { this.state.input >= 18 ? buttonTwo : (this.state.userAge === '')? buttonOne:buttonThree}
       
       <h1>userAge: {this.state.userAge}</h1>
       </div>
