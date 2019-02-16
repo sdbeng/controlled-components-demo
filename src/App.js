@@ -5,11 +5,12 @@ import EventListener from "./components/EventListener";
 import Ternary from "./components/Ternary";
 
 import Frameworks from "./components/Frameworks";
+import FilterUsers from "./components/FilterUsers";
 
 function App() {
   return (
   <div>
-  <Frameworks />
+  <FilterUsers />
   </div>)
 
 }

@@ -30,8 +30,20 @@ export class FilterUsers extends Component {
           ]
     }
   render() {
-    const usersOnline = null; // change code here
-    const renderOnline = null; // change code here
+    // const usersOnline = null; // change code here
+    const usersOnline = this.state.users.filter(user => user.online); 
+    console.log('usersOnline:',usersOnline)
+
+    // const renderOnline = null; // change code here
+    // const renderOnline = usersOnline.map((item) => (
+    //     <li key={item.username}>{item.username}</li>
+    // ))
+
+    // or use an explicit return
+    const renderOnline = usersOnline.map(f => {
+        return <li key={f.username}>{f.username}</li>
+      })
+
     return (
       <div>
       <h1>Current Online Users:</h1>
