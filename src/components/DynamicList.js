@@ -28,7 +28,11 @@ const textAreaStyles = {
       });
     }
     render() {
-      const items = null;//change this line
+    //   const items = null;//change this line
+    //   try implicit return
+    const items = this.state.toDoList.map(item => (
+        <li>{item}</li>
+    ))
       return (
         <div>
           <textarea
