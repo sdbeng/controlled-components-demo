@@ -6,11 +6,12 @@ import Ternary from "./components/Ternary";
 
 import Frameworks from "./components/Frameworks";
 import FilterUsers from "./components/FilterUsers";
+import RandomQuote from "./components/RandomQuote";
 
 function App() {
   return (
   <div>
-  <FilterUsers />
+  <RandomQuote />
   </div>)
 
 }
