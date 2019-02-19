@@ -13,23 +13,39 @@ import UserOutput from "./components/UserOutput";
 
 class App extends Component {
   state = {
-    username: 'Francis'
+    username: 'Francis',
+    showDiv:false
   }
   onChangeHandler = (e) => {
     this.setState({
       username: e.target.value
     })
   }
+  onToggle = () => {
+    this.setState({
+      showDiv:!this.state.showDiv
+    })
+  }
   render() {
     return (
       <div className="msgBox">
-      
         <div>
-          <UserInput onChange={this.onChangeHandler} />
+          <UserInput 
+          onChange={this.onChangeHandler}
+           />
         </div>
-        <div className="msg__content">
-          <UserOutput username={this.state.username} />
-        </div>
+        <button
+        style={{margin:10, padding:5, color:'#387', borderRadius:9}}
+      onClick={this.onToggle}
+         >toggleDiv</button>
+        {this.state.showDiv ? 
+          <div className="msg__content">
+          <UserOutput 
+          username={this.state.username} 
+           />
+        </div> : null
+        }
+        
       </div>)
   }
 }

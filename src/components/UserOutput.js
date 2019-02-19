@@ -5,7 +5,7 @@ function UserOutput(props) {
   
     return (
       <div>
-        <p>Hello {props.username}</p>
+        <p>Hello {props.username} </p>
         <p>Hello {props.username}</p>
         <p>Hello {props.username}</p>
                        

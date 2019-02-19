@@ -14,9 +14,7 @@ function UserInput (props) {
         type="text"
         onChange={props.onChange}
         />
-        <button
-       style={{margin:15, padding:10, color:'#387', borderRadius:19}}
-        >toggleDiv</button>
+       
         </form>
       </div>
     )
