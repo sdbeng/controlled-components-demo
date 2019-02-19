@@ -1,4 +1,4 @@
-import React,{Component} from "react";
+import React, { Component } from "react";
 // import Form from "./components/Form";
 // import MyComponent from './components/MyComponent'
 // import EventListener from "./components/EventListener";
@@ -12,23 +12,24 @@ import UserInput from "./components/UserInput";
 import UserOutput from "./components/UserOutput";
 
 class App extends Component {
-  state={
-    username:'Francis'
+  state = {
+    username: 'Francis'
   }
   onChangeHandler = (e) => {
     this.setState({
       username: e.target.value
     })
   }
-  render(){
+  render() {
     return (
       <div className="msgBox">
-      <div>
-      <UserInput onChange={this.onChangeHandler}/>
-      </div>
-      <div className="msg__content">
-      <UserOutput username={this.state.username}/>
-      </div>
+      
+        <div>
+          <UserInput onChange={this.onChangeHandler} />
+        </div>
+        <div className="msg__content">
+          <UserOutput username={this.state.username} />
+        </div>
       </div>)
   }
 }

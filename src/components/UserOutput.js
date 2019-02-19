@@ -8,11 +8,7 @@ function UserOutput(props) {
         <p>Hello {props.username}</p>
         <p>Hello {props.username}</p>
         <p>Hello {props.username}</p>
-        <p>Hello {props.username}</p>
-        <p>Hello {props.username}</p>
-        <p>Hello {props.username}</p>
-        <p>Hello {props.username}</p>
-        <p>Hello {props.username}</p>               
+                       
       </div>
     )
   
