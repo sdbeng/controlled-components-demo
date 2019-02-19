@@ -1,4 +1,4 @@
-import React from "react";
+import React,{Component} from "react";
 // import Form from "./components/Form";
 // import MyComponent from './components/MyComponent'
 // import EventListener from "./components/EventListener";
@@ -11,18 +11,21 @@ import './App.css'
 import UserInput from "./components/UserInput";
 import UserOutput from "./components/UserOutput";
 
-function App() {
-  return (
-  <div className="msgBox">
-  <div>
-  <UserInput />
-  </div>
-  <div className="msg__content">
-  <UserOutput />
-  </div>
-  
-  </div>)
-
+class App extends Component {
+  state={
+    username:''
+  }
+  render(){
+    return (
+      <div className="msgBox">
+      <div>
+      <UserInput />
+      </div>
+      <div className="msg__content">
+      <UserOutput username={this.state.username}/>
+      </div>
+      </div>)
+  }
 }
 
 export default App;

@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 
-export class UserOutput extends Component {
-  render() {
+function UserOutput(props) {
+  
     return (
       <div>
         <p>UserOutput paragraph1</p>
@@ -12,7 +12,7 @@ export class UserOutput extends Component {
         <p>UserOutput paragraph2</p>        
       </div>
     )
-  }
+  
 }
 
 export default UserOutput
