@@ -13,13 +13,18 @@ import UserOutput from "./components/UserOutput";
 
 class App extends Component {
   state={
-    username:''
+    username:'Francis'
+  }
+  onChangeHandler = (e) => {
+    this.setState({
+      username: e.target.value
+    })
   }
   render(){
     return (
       <div className="msgBox">
       <div>
-      <UserInput />
+      <UserInput onChange={this.onChangeHandler}/>
       </div>
       <div className="msg__content">
       <UserOutput username={this.state.username}/>

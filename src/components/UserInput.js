@@ -8,8 +8,9 @@ export class UserInput extends Component {
         <form>
         <label>for user input</label>
         <input 
+        value={this.props.username}
         type="text"
-        onChange={this.onHandleChange}
+        onChange={this.props.onChange}
         />
         </form>
       </div>

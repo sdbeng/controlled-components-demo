@@ -1,15 +1,18 @@
-import React, { Component } from 'react'
+import React from 'react'
+import './userOutput.css'
 
 function UserOutput(props) {
   
     return (
       <div>
-        <p>UserOutput paragraph1</p>
-        <p>UserOutput paragraph2</p>        
-        <p>UserOutput paragraph2</p>        
-        <p>UserOutput paragraph2</p>        
-        <p>UserOutput paragraph2</p>        
-        <p>UserOutput paragraph2</p>        
+        <p>Hello {props.username}</p>
+        <p>Hello {props.username}</p>
+        <p>Hello {props.username}</p>
+        <p>Hello {props.username}</p>
+        <p>Hello {props.username}</p>
+        <p>Hello {props.username}</p>
+        <p>Hello {props.username}</p>
+        <p>Hello {props.username}</p>               
       </div>
     )
   
