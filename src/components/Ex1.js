@@ -19,9 +19,7 @@ export class Ex1 extends Component {
 export default Ex1
 
 export class Navbar extends Component {
-    constructor(props) {
-        super(props);
-      }
+    
       render() {
         return (
         <div>
