@@ -26,6 +26,12 @@ class App extends Component {
       showDiv:!this.state.showDiv
     })
   }
+  deletePersonHandler = (personIndex) => {
+    // const persons = this.state.persons.slice();
+    const persons = [...this.state.persons];
+    persons.splice(personIndex, 1);
+    this.setState({persons: persons});
+  }
   render() {
     return (
       <div className="msgBox">
