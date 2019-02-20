@@ -68,10 +68,9 @@ export class App extends Component {
   state={
     points:0
   }
-  static getDerivedPropsFromState(props, state){
-    return {
-      points:61
-    }
+  static getDerivedStateFromProps(props, state){
+    console.log('Hello gDSFP...') //get warning to pass a valid state object or null otherwise is undefined
+    // return 'Hello gDSFP...'
   }
   componentDidMount(){
     console.log('calling CDM...')
