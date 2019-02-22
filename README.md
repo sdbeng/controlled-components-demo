@@ -68,9 +68,30 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
 # controlled-components-demo
 
-### git daily tips
+## git daily tips
 
-Spelled last commit message wrong - it will happen
+### Spelled last commit message wrong - 
+This will open up your editor and allow you to make a change to that last commit message.
 ```git commit --amend```
 
-### foo
+### Spelling mistake on branch name
+
+```git branch -m feature-brunch feature-branch```
+
+### Accidentally committed all changes to the master branch
+So you are working on a new feature and in your haste, you forgot to open a new branch for it. You have already committed a load of files and now those commits are all sitting on the master branch.
+
+So we can roll back all those changes to a new branch with the following three commands:
+
+Note: Make sure you commit or stash your changes first, or all will be lost!
+
+This creates a new branch, then rolls back the master branch to where it was before you made changes, before finally checking out your new branch with all your previous chnages intact.
+
+```git branch feature-branch```
+```git reset HEAD~ --hard```
+```git checkout feature-branch```
+
+### foobar
+### foobar
+### foobar
+### foobar
