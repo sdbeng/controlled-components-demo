@@ -131,3 +131,7 @@ efba795 HEAD@{12}: commit (initial): Initial commit
 Take note of the left-most column, as this is the index. If you want to go back to any point in the history, run the below command, replacing {index} with that reference, e.g. `dfa27a2`.
 
 ```git reset HEAD@{index}```
+
+## api ajax calls
+- axios.get done in cdm
+- axios.post in an instance class method
