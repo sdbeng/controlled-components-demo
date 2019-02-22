@@ -91,7 +91,22 @@ This creates a new branch, then rolls back the master branch to where it was bef
 ```git reset HEAD~ --hard```
 ```git checkout feature-branch```
 
-### foobar
+### Added a wrong file in the repo
+What if you've added a file that you did not want to commit? a .env file, a huge image or a config file saved to the wrong folder? Yes, you can fix it.
+
+If all you did was stage the file and you haven't commited yet, it's as simple as resetting that staged file:
+
+```git reset /assets/images/my-huge-bg.jpg```
+
+If gone so far as commiting that change, just run:
+
+```git reset --soft HEAD~1```
+```git reset /assets/images/my-huge-bg.jpg```
+```rm /assets/images/my-huge-bg.jpg```
+```git commit ```
+
+This will undo the commit, rm img, then add a new commit in it place.
+
 ### foobar
 ### foobar
 ### foobar
